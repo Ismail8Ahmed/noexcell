@@ -11,11 +11,31 @@ B1 = int(input("Please do the same for B1. "))
 meta = input("please sum this: Press y for yes and n for no.")
 
 if meta == "y":
-    field = ['A1', 'B1', 'Meta']
+    field = ['A1', 'B1', 'Add', 'Divide', 'Subtract', 'Multiply']
     sum = A1 + B1
     sumint = int(sum)
     print(sum)
-    rows = [A1, B1, sumint] 
+    
+    # Divison Also
+    divide = A1 / B1
+    divideint = int(divide)
+    print(divide)
+    
+    # Subtract
+    subtract = A1 - B1
+    #Puts int(FOO)'s for a reason: So that Matplotlib does not throw up
+    subtractint = int(subtract)
+    print(subtract)
+    
+    #multiplies
+    multiply = A1 * B1
+    multiplyint = int(multiply)
+    print(multiply)
+    #writes to row, done because it makes stuff easier
+    rows = [A1, B1, sumint, divideint, subtractint, multiplyint]    
+    
+    
+    
     with open('yeetboi.csv', 'w') as export:  
         csvwrite = csv.writer(export, sum)
         csvwrite.writerow(field)
@@ -33,6 +53,7 @@ if meta == "y":
             plots = csv.reader(plotcsv, delimiter=',')
             for plotrow in plots:
                 x.append(plotrow[0])
+                # does it on purpose because all the values are writtern in the 1 (count from 0) or 2 row (count from 1).
                 y.append(plotrow[1])
                 
         plt.plot(x, y, label = "yeetboi!")
@@ -41,6 +62,7 @@ if meta == "y":
         plt.title("Yeet Boi")
         plt.legend()
         plt.show()
+    
 else:
     pass 
     print("nope")
