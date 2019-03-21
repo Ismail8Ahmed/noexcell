@@ -1,5 +1,5 @@
 # NoExcell
-Spreadsheets for people who hate spreadsheets
+Spreadsheets for people who hate spreadsheets!
 I have always hated spreadsheets. I never used it if I could. Until, one boring day, I came across Miscell (https://github.com/owainkenwayucl/miscell)
 It changed my whole perspective on the idea of spreadsheets. Will my dreams be accomplished? Found out on the next episode of NoExcell!
 So, me, a progamming rookie who has just been doing text-based games that are not even complicated, supposed to do this? Answer: CSV. I was more motivated than ever before in my life of coding. I used to force myself. Now, when I have the time and energy, I code.
