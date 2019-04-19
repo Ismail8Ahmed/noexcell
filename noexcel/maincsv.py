@@ -3,8 +3,8 @@
 import csv
 import matplotlib.pyplot as plt
 
-A1 = int(input("Please input the numerical value for A1. "))
-B1 = int(input("Please do the same for B1. "))
+A1 = float(input("Please input the numerical value for A1. "))
+B1 = float(input("Please do the same for B1. "))
 
 # meta because for Smash4 MetaKnight
 
@@ -13,26 +13,26 @@ meta = input("please sum this: Press y for yes and n for no.")
 if meta == "y":
     field = ['A1', 'B1', 'Add', 'Divide', 'Subtract', 'Multiply']
     sum = A1 + B1
-    sumint = int(sum)
-    print(sumint)
+    sumfloat = float(sum)
+    print(sumfloat)
     
     # Divison Also
     divide = A1 / B1
-    divideint = int(divide)
-    print(divideint)
+    dividefloat = float(divide)
+    print(dividefloat)
     
     # Subtract
     subtract = A1 - B1
     #Puts int(FOO)'s for a reason: So that Matplotlib does not throw up
-    subtractint = int(subtract)
-    print(subtractint)
+    subtractfloat = float(subtract)
+    print(subtractfloat)
     
     #multiplies
     multiply = A1 * B1
-    multiplyint = int(multiply)
-    print(multiplyint)
+    multiplyfloat = float(multiply)
+    print(multiplyfloat)
     #writes to row, done because it makes stuff easier
-    rows = [A1, B1, sumint, divideint, subtractint, multiplyint]    
+    rows = [A1, B1, sumfloat, dividefloat, subtractfloat, multiplyfloat]    
     
     
     
